@@ -1,0 +1,179 @@
+body {
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 68px;
+  width: 900px;
+  min-width: 900px;
+  height: 600px;
+  border: 8px dashed white;
+}
+
+#bg-image {
+  position: fixed;
+  top: 76px;
+  width: 900px;
+  height: 600px;
+  background-image: url('asteroids.jpg');
+  z-index: 1;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px);
+  transition: all 8s ;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#wrapper {
+  width: 900px;
+  min-width: 900px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 68px;
+  z-index: 5;
+  transition: all 8s ease;
+}
+
+header {
+  width: 600px;
+  margin: 0 auto 60px auto;
+  border-bottom: 4px solid white;
+}
+
+h1 {
+  font-size: 68px;
+  text-align: center;
+  text-shadow: 5px 5px  #AA0114;
+}
+
+.menu {
+  margin: 30px auto 0 auto;
+  width: 100%;
+}
+
+#main {
+  display: initial;
+}
+
+#controls {
+  display: none;
+}
+
+#about {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
+#game {
+  height: 100%;
+  width: 100%;
+}
+
+#score {
+  position: fixed;
+  font-size: 32px;
+  top: 68px;
+  padding: 24px 0 0 20px;
+}
+
+#finalScore {
+  font-size: 90px;
+  padding-bottom: 150px;
+}
+
+#gameOver {
+  display: none;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  width: 100%;
+  float: left;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+#description {
+  font-size: 20px;
+  padding-bottom: 38px;
+}
+
+footer {
+  float: right;
+  margin: 28px 40px 0 0;
+  height: 100px;
+}
+footer a:hover {
+  cursor: pointer;
+  color: #AA0114;
+}
+
+a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.flash {
+  animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: step-end;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes flash {
+  0% { background-color: white; 
+       color: #AA0114;
+  }
+    50% { background-color: initial; 
+          color: white;
+  }
+}
+
+.scanlines {
+  pointer-events: none;
+  width: 135%;
+  height: 135%;
+  position: fixed;
+  left: -10%;
+  top: -10%;
+  z-index: 7;
+
+  background: -webkit-repeating-linear-gradient(
+    top,
+    transparent 0px,
+    transparent 2px,
+    rgba(0,0,0,0.55) 0px,
+    rgba(0,0,0,0.15) 4px
+  );
+  -webkit-background-size: 100% 4px;
+
+  background: -moz-repeating-linear-gradient(
+    top,
+    transparent 0px,
+    transparent 2px,
+    rgba(0,0,0,0.55) 0px,
+    rgba(0,0,0,0.15) 4px
+  );
+  -moz-background-size: 100% 4px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASTEROIDS</title>
+	<!-- 	FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<!-- P5.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="scanlines"></div>
+	<div class = "container"  >
+	  <div id="bg-image" ></div>
+	  <div id="wrapper" >
+	    <header ><h1>ASTEROIDS</h1></header>
+	<!--     MAIN MENU SECTION -->
+	    <div class= "menu" id="main">
+	      <ul>
+	        <li><a class="flash">START</a></li>
+	        <li><a>CONTROLS</a></li>
+	        <li><a>ABOUT</a></li>
+	      </ul>
+	      <footer ><p>1979-2017 TRIBUTE BY <a target="_blank" href="https://codepen.io/zlotousty">ZLOTOUSTY</a></p></footer>
+	    </div>
+	<!--     CONTROLS SECTION -->
+	    <div class= "menu" id ="controls">
+	      <ul>
+	        <li>ARROWS - STEERING</li>
+	        <li>SPACE BAR - LASER</li>
+	        <li>CONTROL - MISSILE</li>
+	        <li><a class="flash" >BACK</a></li>
+	      </ul>
+	    </div>
+	 <!--     ABOUT SECTION -->
+	    <div class= "menu" id ="about">
+	      <ul>
+	        <li id = "description">Asteroids is an arcade space shooter released in November 1979 by Atari, Inc. and designed by Lyle Rains, Ed Logg, and Dominic Walsh. The player controls a spaceship in an asteroid field which is periodically traversed by flying saucers. The object of the game is to shoot and destroy asteroids and saucers while not colliding with either or being hit by the saucers' counter-fire. The game becomes harder as the number of asteroids increases.</li>
+	        <li><a class="flash">BACK</a></li>
+	      </ul>
+	    </div>
+	<!--     GAME OVER / RETRY -->
+	    
+	  </div>  
+	<!--   GAME SECTION -->
+	  <div id="game">
+		  <div id="score"></div>
+		  <div class= "menu" id ="gameOver">
+		    <ul>
+		      <li><h1>GAME OVER<h1></li>
+		      <li id = "finalScore"></li>
+		      <li><a class="flash">MENU</a></li>
+		    </ul>
+		  </div>
+	  </div>
+	</div>
+	
+	<script src="app.js"></script>
+</body>
+</html>
